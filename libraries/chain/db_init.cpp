@@ -61,6 +61,8 @@
 #include <graphene/chain/withdraw_permission_evaluator.hpp>
 #include <graphene/chain/witness_evaluator.hpp>
 #include <graphene/chain/worker_evaluator.hpp>
+#include <graphene/chain/time_lock_evaluator.hpp>
+#include <graphene/chain/time_lock_object.hpp>
 
 #include <graphene/chain/protocol/fee_schedule.hpp>
 
@@ -171,6 +173,11 @@ void database::initialize_evaluators()
    register_evaluator<transfer_from_blind_evaluator>();
    register_evaluator<blind_transfer_evaluator>();
    register_evaluator<asset_claim_fees_evaluator>();
+   register_evaluator<time_lock_create_evaluator>();
+   register_evaluator<time_lock_deposit_evaluator>();
+   register_evaluator<time_lock_withdraw_evaluator>();
+   register_evaluator<time_lock_abort_withdrawal_evaluator>();
+   register_evaluator<time_lock_complete_withdrawal_evaluator>();
 }
 
 void database::initialize_indexes()
@@ -199,6 +206,8 @@ void database::initialize_indexes()
    add_index< primary_index<worker_index> >();
    add_index< primary_index<balance_index> >();
    add_index< primary_index<blinded_balance_index> >();
+   add_index< primary_index<time_lock_balance_index> >();
+   add_index< primary_index<time_lock_withdrawal_index> >();
 
    //Implementation object indexes
    add_index< primary_index<transaction_index                             > >();

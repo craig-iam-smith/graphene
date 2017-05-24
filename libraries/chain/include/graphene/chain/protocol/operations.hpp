@@ -38,6 +38,7 @@
 #include <graphene/chain/protocol/withdraw_permission.hpp>
 #include <graphene/chain/protocol/witness.hpp>
 #include <graphene/chain/protocol/worker.hpp>
+#include <graphene/chain/protocol/time_lock.hpp>
 
 namespace graphene { namespace chain {
 
@@ -91,7 +92,12 @@ namespace graphene { namespace chain {
             transfer_from_blind_operation,
             asset_settle_cancel_operation,  // VIRTUAL
             asset_claim_fees_operation,
-            fba_distribute_operation        // VIRTUAL
+            fba_distribute_operation,       // VIRTUAL
+            time_lock_create_operation,
+            time_lock_deposit_operation,
+            time_lock_withdraw_operation,
+            time_lock_abort_withdrawal_operation,
+            time_lock_complete_withdrawal_operation
          > operation;
 
    /// @} // operations group
