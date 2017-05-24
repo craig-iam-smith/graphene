@@ -19,6 +19,7 @@ libraries/wallet/doxygen
 programs/cli_wallet/cli_wallet
 programs/js_operation_serializer/js_operation_serializer
 programs/witness_node/witness_node
+programs/build_helpers/cat-parts
 
 tests/app_test
 tests/chain_bench
@@ -39,3 +40,12 @@ object_database/*
 
 *.pyc
 *.pyo
+
+A
+A
+A
+A
+A
+A
+A
+programs/build_helpers/cat-parts
