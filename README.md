@@ -7,11 +7,11 @@ Starting Graphene
 -----------------
 
 For Ubuntu 14.04 LTS users, see this link first:
-    https://github.com/cryptonomex/graphene/wiki/build-ubuntu
+    https://github.com/craig-iam-smith/graphene/wiki/build-ubuntu
 
 and then proceed with:
 
-    git clone https://github.com/cryptonomex/graphene.git
+    git clone https://github.com/craig-iam-smith/graphene.git
     cd graphene
     git submodule update --init --recursive
     cmake -DCMAKE_BUILD_TYPE=Debug .
@@ -40,7 +40,7 @@ To import your initial balance:
 If you send private keys over this connection, `rpc-endpoint` should be bound to localhost for security.
 
 A list of CLI wallet commands is available
-[here](https://github.com/cryptonomex/graphene/blob/master/libraries/wallet/include/graphene/wallet/wallet.hpp).
+[here](https://github.com/craig-iam-smith/graphene/blob/master/libraries/wallet/include/graphene/wallet/wallet.hpp).
 
 Code coverage testing
 ---------------------
@@ -165,7 +165,7 @@ it is fairly simple to write API methods to expose database methods.
 Running private testnet
 -----------------------
 
-See the [documentation](https://github.com/cryptonomex/graphene/wiki/private-testnet) if you want to run a private testnet.
+See the [documentation](https://github.com/craig-iam-smith/graphene/wiki/private-testnet) if you want to run a private testnet.
 
 Questions
 ---------
@@ -207,7 +207,7 @@ Questions
 
     The second number specifies the *type*.  The type of the object determines what fields it has.  For a
     complete list of type ID's, see `enum object_type` and `enum impl_object_type` in
-    [types.hpp](https://github.com/cryptonomex/graphene/blob/master/libraries/chain/include/graphene/chain/protocol/types.hpp).
+    [types.hpp](https://github.com/craig-iam-smith/graphene/blob/master/libraries/chain/include/graphene/chain/protocol/types.hpp).
 
     The third number specifies the *instance*.  The instance of the object is different for each individual
     object.
