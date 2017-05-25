@@ -23,6 +23,7 @@
  * THE SOFTWARE.
  */
 #pragma once
+#include <graphene/chain/protocol/operations.hpp>
 #include <graphene/chain/evaluator.hpp>
 #include <graphene/chain/account_object.hpp>
 
